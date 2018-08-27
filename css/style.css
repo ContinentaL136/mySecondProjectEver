@@ -1,0 +1,497 @@
+/* Сброс стилей */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Подключение шрифтов */
+
+@font-face {
+    font-family: Russo_One;
+    src: url('../fonts/Russo_One.ttf');
+}
+
+@font-face {
+    font-family: airborne;
+    src: url('../fonts/airborne.ttf');
+}
+
+@font-face {
+    font-family: GUERRILLA-Normal;
+    src: url('../fonts/GUERRILLA-Normal.otf');
+}
+
+@font-face {
+    font-family: CodenameCoderFree4F-Bold;
+    src: url('../fonts/CodenameCoderFree4F-Bold.otf');
+}
+
+/* selection block (Отвечает за выделение текста мышкой) */
+
+::selection {
+    background: #e2e231;
+    color: #c32542;
+}
+
+::-moz-selection {
+    background: #e2e231;
+    color: #c32542;
+}
+
+::-webkit-selection {
+    background: #e2e231;
+    color: #c32542;
+}
+
+::-ms-selection {
+    background: #e2e231;
+    color: #c32542;
+}
+
+/* Шапка и навигация сайта  */
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    background-color: rgba(40, 114, 201, 0.67);
+}
+
+.wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.headerInside {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav {
+    line-height: 50px;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 0 25px;
+    color: #f7f7f7;
+    font-family: CodenameCoderFree4F-Bold;
+    transition: 0.2s;
+    font-size: 1.3em;
+}
+
+nav a:hover {
+    color: #e2e231;
+    text-decoration: underline #fff;
+}
+
+.logo {
+    padding: 8px 0;
+    text-align: center;
+    line-height: 50px;
+    font-size: 2.5em;
+    font-family: GUERRILLA-Normal;
+    color: #e2e231;
+    cursor: pointer;
+    text-shadow: 0 1px 0 #b2b2b2;
+}
+
+.logo:hover {
+    color: #f7f7f7;
+}
+
+/* Лицо сайта */
+
+.main h1 {
+    text-align: center;
+    font-size: 3em;
+    padding: 370px 0 10px 0;
+    font-family: airborne;
+    color: #e2e231;
+    text-shadow: 0 1px 0 #c32542;
+}
+
+.main h2 {
+    text-align: center;
+    font-size: 1.8em;
+    font-family: Russo_One;
+    color: #c32542;
+    text-shadow: 0 1px 0 #e2e231;
+}
+
+.main h3 {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 15px 0 25px 0;
+    font-family: Russo_One;
+    color: #c32542;
+    text-shadow: 0 1px 0 #e2e231;
+}
+
+.request {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.request a {
+    flex-basis: 220px;
+    text-align: center;
+    background-color: #e2e231;
+    border-radius: 5px;
+    color: #c32542;
+    text-decoration: inherit;
+    line-height: 50px;
+    font-size: 1.3em;
+    font-family: CodenameCoderFree4F-Bold;
+    box-shadow: 0 1px 10px -1px #c32542;
+    -mz-box-shadow: 0 1px 10px -1px #c32542;
+    -webkit-box-shadow: 0 1px 10px -1px #c32542;
+}
+
+.request a:hover {
+    background-color: #f8f852;
+    cursor: pointer;
+    color: #e33051;
+}
+
+.scroll {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.scroll a {
+    padding: 230px 0 0 0;
+    cursor: pointer;
+}
+
+.phone {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.phone a {
+    cursor: pointer;
+    color: #e2e231;
+    text-shadow: 0 1px 0 #26250c;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.phone a:hover {
+    color: #ffffff;
+}
+
+/* О нас */
+
+.about {
+    background-image:url('../img/concrete_seamless.png');
+}
+
+.about h3 {
+    text-align: center;
+    font-size: 2.1em;
+    padding: 60px 0;
+    font-family: Russo_One;
+    color: #c32542;
+}
+
+.about p {
+    text-align: center;
+    font-size: 1.3em;
+    padding: 0 170px 50px 170px;
+    font-family: CodenameCoderFree4F-Bold;
+    color: #383838;
+    border-bottom: 2px solid rgba(195, 37, 66, 0.87);
+}
+
+/* Услуги */
+
+.service {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 0 50px 0;
+}
+
+.service .service_item {
+    flex-basis: 300px;
+    padding: 10px 10px;
+}
+
+.service_item img {
+    padding: 25px 0;
+    cursor: pointer;
+}
+
+.service_item h6 {
+    padding: 5px 50px 5px 50px;
+    color: #383838;
+    font-size: 1.3em;
+    font-family: CodenameCoderFree4F-Bold;
+}
+
+/* Новости */
+
+.news h3 {
+    text-align: center;
+    font-size: 2.1em;
+    padding: 60px 0;
+    color: #c32542;
+    font-family: Russo_One;
+}
+
+.news_items {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.news_item h4 {
+    font-size: 1.3em;
+    color: #c32542;
+    font-family: Russo_One;
+    padding: 15px;
+}
+
+.news_item p {
+    font-size: 1.2em;
+    color: #383838;
+    font-family: CodenameCoderFree4F-Bold;
+    padding: 5px;
+    border-bottom: 1px dashed rgba(3, 11, 10, 0.32);
+}
+
+.news_item {
+    flex-basis: 400px;
+    padding: 110px 40px;
+}
+
+/* Каталог товаров */
+
+.catalog {
+    background-image: url('../img/concrete-texture.png');
+    text-align: center;
+}
+
+.catalog h3 {
+    font-size: 2.1em;
+    padding: 60px 0;
+    font-family: Russo_One;
+    color: #c32542;
+}
+
+.catalog_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: CodenameCoderFree4F-Bold;
+    font-size: 1.3em;
+    color: #383838;
+    padding: 0 0 50px 0;
+        border-bottom: 2px solid rgba(195, 37, 66, 0.87);
+    cursor: pointer;
+}
+
+.catalog_item {
+    flex-basis: 250px;
+    padding: 20px 0;
+    border: 2px solid rgba(255, 255, 255, 0.31);
+}
+
+.catalog_item:hover {
+    transform: translate(0px, 5px) scale(1.01);
+    transition: all .3s ease-in-out;
+}
+
+/* Прайсы */
+
+.price {
+    background-image: url(../img/wb.png);
+}
+
+.price h3 {
+    text-align: center;
+    color: #c32542;
+    font-family: Russo_one;
+    padding: 60px 0;
+    font-size: 2.1em;
+}
+
+.price_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 0 50px 0;
+}
+
+.price_item {
+    padding: 20px;
+    font-size: 1.3em;
+    color: #383838;
+    font-family: CodenameCoderFree4F-Bold;
+}
+
+.price_item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Эксплуатация */
+
+.techInfo {
+    background-image: url(../img/wb.png);
+}
+
+.techInfo h3 {
+    text-align: center;
+    font-size: 2.1em;
+    font-family: Russo_one;
+    padding: 60px 0;
+    color: #c32542;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 0 0 50px 0;
+}
+
+.info_item img {
+    cursor: pointer;
+}
+
+.info_item {
+    flex-basis: 300px;
+    padding: 10px;
+}
+
+.info_item p {
+    padding: 10px;
+}
+
+.info_item a {
+    text-decoration: none;
+    color: #383838;
+    font-family: CodenameCoderFree4F-Bold;
+    font-size: 1.3em;
+}
+
+/* Контакты */
+
+.contact h3 {
+    text-align: center;
+    font-size: 2.1em;
+    font-family: Russo_one;
+    color: #c32542;
+    padding: 60px 0;
+}
+
+.adr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 10px 0 15px 0;
+}
+
+.adr .adr_item {
+    flex-basis: 410px;
+}
+
+.adr h4 {
+    font-size: 1.7em;
+    color: #d0d031;
+    font-family: CodenameCoderFree4F-Bold;
+    text-shadow: 0 1px 0 #c32542;
+}
+
+.adr p {
+    font-size: 1.3em;
+    color: #22332f;
+    font-family: GUERRILLA-Normal;
+    text-shadow: 0 1px 0 #c32542;
+}
+
+.adr h5 {
+    font-size: 1.5em;
+    color: #29290a;
+    font-family: CodenameCoderFree4F-Bold;
+    text-shadow: 0 1px 0 #c32542;
+}
+
+.fMail {
+    color: #c32542;
+    font-size: 1.5em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#map {
+    margin: 0 auto;
+    width: 100%;
+    height: 400px;
+}
+
+.tel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0 0 15px 0;
+}
+
+/* Подвал сайта */
+
+footer {
+    background-color: rgba(206, 235, 151, 0.24);
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 0.8em;
+    font-family: Russo_one;
+    color: #c32542;
+    padding: 10px 0 10px 0;
+}
+
+footer img {
+    cursor: pointer;
+    padding: 30px 5px 10px 5px;
+    text-align: center;
+}

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Компания Колесофф - колеса и колесные опоры для тележек, Воронеж, Россия</title>
+        <link rel="stylesheet" href="css/style.css">
+        
+        <!-- Карта Yandex -->
+       <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+        <script type="text/javascript">
+        ymaps.ready(init);
+        var myMap, 
+            myPlacemark;
+
+        function init(){ 
+            myMap = new ymaps.Map("map", {
+                center: [51.658693, 39.163582],
+                zoom: 17
+            }); 
+            
+            myPlacemark = new ymaps.Placemark([51.658693, 39.163582], {
+                hintContent: 'Воронеж',
+                balloonContent: 'Колесные опоры'
+            });
+            
+            myMap.geoObjects.add(myPlacemark);
+        }
+    </script>
+    
+    </head>
+    <body>
+      
+       <div class="parallax-window" data-parallax="scroll" data-image-src="img/bg6.jpg">
+        <header>
+            <div class="wrapper">
+               <div class="headerInside">
+                    <div class="logo">Колесофф</div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#about__us">О нас</a>
+                            </li>
+                            <li>
+                                <a href="#news__">Новости</a>
+                            </li>
+                            <li>
+                                <a href="#catalog__">Каталог</a>
+                            </li>
+                            <li>
+                                <a href="#prices__">Прайсы</a>
+                            </li>
+                            <li>
+                                <a href="#tech__info">Техническая информация</a>
+                            </li>
+                            <li>
+                                <a href="#contact__">Контакты</a>
+                            </li>   
+                        </ul>
+                    </nav> 
+               </div>   
+            </div>
+        </header>
+        
+        <div class="main">
+           <div class="wrapper">
+                <h1>Колеса и колесные опоры по лучшим ценам</h1>
+                <h2>Наличие и сроки поставки уточняйте по телефону</h2>
+                <h3>Индивидуальный подход к каждому клиенту</h3>
+                <div class="request">
+                    <a href="">Оставить заявку</a>
+                </div>
+                <div class="scroll">
+                    <a><img src="img/iconmonstr-mouse-6-24.png" alt=""></a>
+                </div>
+                <div class="phone"><a>+8 (900) 957-58-97</a></div>
+                <div class="phone"><a>+7 (473) 260-42-11</a></div>
+            </div>
+        </div>
+    </div>    
+        
+        <div class="about">
+           <div class="wrapper">
+                <h3 id="about__us">О компании</h3>
+                <p>Наша компания занимается поставкой колес и колесных опор в городе Воронеже. Мы работаем со всеми мировыми производителями данной продукции. У нас Вы сможете найти все необходимые колеса и колесные опоры всех мировых брендов по самым низким ценам и самым коротким срокам. Обращайтесь!</p>
+                <h3>Наши услуги</h3>
+                <div class="service">
+                    <div class="service_item">
+                        <img src="img/doc.png" alt="">
+                        <h6>Помощь в выборе продукта</h6>
+                    </div>
+                    <div class="service_item">
+                        <img src="img/iconmonstr-check-mark-18-96.png" alt="">
+                        <h6>Полное сопровождение сделки</h6>
+                    </div>
+                    <div class="service_item">
+                        <img src="img/iconmonstr-car-2-96.png" alt="">
+                        <h6>Доставка товара</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="parallax-window" data-parallax="scroll" data-image-src="img/paper.jpg">
+            <div class="news">
+                
+                   <h3 id="news__">Новости</h3>
+                    <div class="news_items">
+                        <div class="news_item">
+                            <h4>Сверхбольшегрузные колеса в ассортименте</h4>
+                            <p>22.08.2016</p>
+                            <p>Доброго времени суток! У нас в ассортименте появились колеса для большегрузных тележек, контейнеров и станков, вплоть до 4000кг нагрузки на одно колесо, обращайтесь!</p>
+                        </div>
+                        <div class="news_item">
+                            <h4>Снижение цен</h4>
+                            <p>12.04.2017</p>
+                            <p>Приветствую всех посетителей нашего сайта. У нас колосальное снижение цен на промышленные колеса, большегрузные колеса и ролики! Цены точнее можно посмотреть в прайсе! Звоните, пишите!</p>
+                        </div>
+                        <div class="news_item">
+                            <h4>Каталог товаров</h4>
+                            <p>27.05.2016</p>
+                            <p>У нас новая новость! На сайте появился раздел "Каталог товаров", теперь будет ещё удобнее подобрать Вам необходимое колесо, если будут вопросы или что-то непонятно, звоните или пишите!</p>
+                        </div>
+                        <div class="news_item">
+                            <h4>Расширение ассортимента</h4>
+                            <p>27.01.2016</p>
+                            <p>Мы расширяемся! Наш ассортимент увеличивается, в продаже появились, тали ручные цепные, лебедки ручные, лебедки электрические, блоки монтажные, домкраты и тяговые механизмы! А так же у нас появился большой выбор складских ящиков и контейнеров! Звоните и заказывайте!</p>
+                        </div>
+                        <div class="news_item">
+                            <h4>Мы открылись</h4>
+                            <p>18.11.2015</p>
+                            <p>Молодая развивающаяся компания по продаже колес и колесных опор открылась в г. Воронеже, обращайтесь, с любыми запросами по данной теме, будем рады помочь!</p>
+                        </div>
+                        <div class="news_item">
+                            <h4>Помощь</h4>
+                            <p>18.11.2015</p>
+                            <p>Все цены на колеса представлены в разделе прайсы, если в прайсе Вы не нашли необходимые колеса, это не проблема, позвоните нам и мы обязательно подберем Вам необходимое колесо!</p>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+        
+        <div class="catalog">
+            <div class="wrapper">
+               <h3 id="catalog__">Каталог товаров</h3>
+                <div class="catalog_items">
+                    <div class="catalog_item">
+                        <a><img src="img/1s.jpg" alt=""></a>
+                        <h4>Промышленная серия</h4>
+                    </div>
+                    <div class="catalog_item">
+                        <a><img src="img/2s.jpg" alt=""></a>
+                        <h4>Аппаратная серия</h4>
+                    </div>
+                    <div class="catalog_item">
+                        <a><img src="img/3s.jpg" alt=""></a>
+                        <h4>Большегрузная серия</h4>
+                    </div>
+                    <div class="catalog_item">
+                        <a><img src="img/4s.jpg" alt=""></a>
+                        <h4>Пневматические колеса</h4>
+                    </div>
+                    <div class="catalog_item">
+                        <a><img src="img/5s.jpg" alt=""></a>
+                        <h4>Полиамидные и нейлоновые колеса</h4>
+                    </div>
+                    <div class="catalog_item">
+                        <a><img src="img/6s.jpg" alt=""></a>
+                        <h4>Колеса и ролики для гидравлических тележек</h4>
+                    </div>
+                    <div class="catalog_item">
+                        <a><img src="img/7s.jpg" alt=""></a>
+                        <h4>Термостойкие колеса</h4>
+                    </div>
+                    <div class="catalog_item">
+                        <a><img src="img/8s.jpg" alt=""></a>
+                        <h4>Супер большегрузная серия</h4>
+                    </div>
+                    <div class="catalog_item">
+                        <a><img src="img/9s.jpg" alt=""></a>
+                        <h4>Колеса под заказ</h4>
+                    </div>
+                    <div class="catalog_item">
+                        <a><img src="img/10s.jpg" alt=""></a>
+                        <h4>Колеса для складской и грузоподъемной техники</h4>
+                    </div>
+                    <div class="catalog_item">
+                        <a><img src="img/11s.jpg" alt=""></a>
+                        <h4>Подводные опоры</h4>
+                    </div>
+                    <div class="catalog_item">
+                        <a><img src="img/12s.jpg" alt=""></a>
+                        <h4>Гидравлические тележки</h4>
+                    </div>
+                    <div class="catalog_item">
+                        <a><img src="img/13s.jpg" alt=""></a>
+                        <h4>Складские тележки</h4>
+                    </div>
+                    <div class="catalog_item">
+                        <a><img src="img/14s.jpg" alt=""></a>
+                        <h4>Грузовые тележки</h4>
+                    </div>
+                    <div class="catalog_item">
+                        <a><img src="img/15s.jpg" alt=""></a>
+                        <h4>Бетономесители</h4>
+                    </div>
+                    <div class="catalog_item">
+                        <a><img src="img/16s.png" alt=""></a>
+                        <h4>Ручные штаблеры</h4>
+                    </div>
+                    <div class="catalog_item">
+                        <a><img src="img/17s.jpg" alt=""></a>
+                        <h4>Самоходные электрические тележки</h4>
+                    </div>
+                    <div class="catalog_item">
+                        <a><img src="img/18s.jpg" alt=""></a>
+                        <h4>Штаблеры гидравлические с электроподъемом</h4>
+                    </div>
+                    <div class="catalog_item">
+                        <a><img src="img/19s.png" alt=""></a>
+                        <h4>Штаблеры самоходные без платформы</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="price">
+            <div class="wrapper">
+               <h3 id="prices__">Прайсы</h3>
+                <div class="price_items">
+                    <div class="price_item">
+                        <a href="docs/%D0%9F%D1%80%D0%B0%D0%B9%D1%81%20%D1%82%D0%B5%D0%BB%D0%B5%D0%B6%D0%BA%D0%B8,%20%D1%88%D1%82%D0%B0%D0%B1%D0%B5%D0%BB%D0%B5%D1%80%D1%8B,%20%D0%B1%D0%B5%D1%82%D0%BE%D0%BD%D0%BE%D1%81%D0%BC%D0%B5%D1%81%D0%B8%D1%82%D0%B5%D0%BB%D0%B8.xlsx" download><img src="img/iconmonstr-file-22-48.png" alt="">ПРАЙС ТЕЛЕЖКИ, ШТАБЛЕРЫ, БЕТОНОСМЕСИТЕЛИ.XLSX</a>
+                    </div>
+                    <div class="price_item">
+                        <a href="docs/%D0%9F%D1%80%D0%B0%D0%B9%D1%81%20%D0%BA%D0%BE%D0%BB%D0%B5%D1%81%D0%BD%D1%8B%D0%B5%20%D0%BE%D0%BF%D0%BE%D1%80%D1%8B.xlsx" download><img src="img/iconmonstr-file-22-48.png" alt="">ПРАЙС КОЛЕСНЫЕ ОПОРЫ.XLSX</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="techInfo">
+           <div class="wrapper">
+                <h3 id="tech__info">Способы эксплуатации и техническая информация</h3>
+                <div class="info">
+                      <div class="info_item">
+                           <img src="img/iconmonstr-delivery-10-96.png" alt="">
+                          <a href=""><p>Подбор колес и колесных опор</p></a>
+                        </div>
+                    <div class="info_item">  
+                        <img src="img/iconmonstr-delivery-12-96.png" alt="">
+                        <a href=""><p>Варианты креплений колес и роликов</p></a>
+                    </div>
+                    <div class="info_item">
+                        <img src="img/iconmonstr-delivery-15-96.png" alt="">
+                        <a href=""><p>Правила эксплуатации колес и роликов</p></a>
+                    </div>
+                    <div class="info_item">
+                        <img src="img/iconmonstr-shopping-cart-28-96.png" alt="">
+                        <a href=""><p>Сопротивление качению</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="parallax-window" data-parallax="scroll" data-image-src="img/tool.jpg">
+        <div class="contact">
+           <div class="wrapper">
+               <h3 id="contact__">Контактная информация</h3>
+               <div class="adr">
+                    <div class="adr_item">
+                        <h4>Адрес</h4>
+                    </div>
+                    <div class="adr_item">
+                        <h5>г. Воронеж, ул. Богачева, д.53, 394038</h5>
+                        <p>Вход в магазин слева от здания на цокольном этаже</p>
+                    </div>
+               </div>
+               <div id="map">
+                   
+               </div>
+                   <div class="adr">
+                       <div class="adr_item">
+                           <h4>Телефоны</h4>
+                       </div>
+                       <div class="adr_item">
+                           <h5>+7 (473) 260-42-11</h5>
+                           <h5>+8 (900) 957-58-97</h5>
+                       </div>
+                   </div>
+                       
+                      <div class="adr">
+                        <div class="adr_item">
+                            <h4>Часы работы</h4>
+                        </div>
+                        <div class="adr_item">
+                            <h5>с 9:00 до 17:00 ПН-ПТ</h5>
+                            <h5>Выходной СБ-ВСК</h5>
+                        </div>
+                    </div>  
+                       <div class="adr">
+                        <div class="adr_item">
+                            <h4>E-MAIL</h4>
+                           </div>
+                           <div class="adr_item">
+                            <span class="fMail">kokolesoff@mail.ru</span>
+                            <p>Менеджер Константин</p>
+                               <span class="fMail">dnkolesoff@mail.ru</span>
+                            <p>Менеджер Денис</p>
+                        </div>
+                        </div>
+                    </div>        
+            </div>
+        
+        <footer>
+            <img src="img/iconmonstr-facebook-4-32.png" alt="facebook">
+            <img src="img/iconmonstr-vk-4-32.png" alt="vk">
+            <img src="img/iconmonstr-google-plus-4-32.png" alt="google">
+            <img src="img/iconmonstr-instagram-14-32.png" alt="instagram">
+            <img src="img/iconmonstr-twitter-4-32.png" alt="twitter">
+            <h3> &copy; Made by Maxim Zharkih 2017.</h3>
+
+           </div>
+        </footer>
+        </div>
+        <!-- Добавляем Parallax effect -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/parallax.min.js"></script>
+
+    </body>
+</html>
